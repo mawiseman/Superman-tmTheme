@@ -62,11 +62,12 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>CSS Value</string>
+			<string>Value</string>
 			<key>scope</key>
 			<string>support.constant.css ,
 keyword.other.unit.css,
-meta.property-value.css</string>
+meta.property-value.css,
+constant.numeric.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -96,6 +97,107 @@ punctuation.terminator.rule.css,</string>
 			<dict>
 				<key>foreground</key>
 				<string>#879EA6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS General</string>
+			<key>scope</key>
+			<string>source.js,
+support.constant.js,</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E4DEAA</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS Keywords</string>
+			<key>scope</key>
+			<string>storage.type.js,
+keyword.control.js,
+keyword.operator.new.js,
+constant.js,
+variable.language</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2B91AF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JS Punctuation</string>
+			<key>scope</key>
+			<string>meta.brace.curly.js, 
+punctuation.definition.parameters.begin.js, 
+punctuation.definition.parameters.end.js, 
+source.js keyword.operator.js,
+punctuation.terminator.statement.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffffff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F5E20F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment.line</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#808080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.comment,
+punctuation.definition.tag.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#879EA6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>HTML Element</string>
+			<key>scope</key>
+			<string>entity.name.tag.structure.any.html,
+entity.name.tag.inline.any.html,
+entity.name.tag.block.any.html,
+entity.name.tag.script.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF4747</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>HTML Attribute</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2B91AF</string>
 			</dict>
 		</dict>
 	</array>
