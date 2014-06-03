@@ -28,7 +28,7 @@
 				<key>lineHighlight</key>
 				<string>#3E3D32</string>
 				<key>selection</key>
-				<string>#a8bbc2</string>
+				<string>#2E373B</string>
 				<key>findHighlight</key>
 				<string>#FFE792</string>
 				<key>findHighlightForeground</key>
@@ -62,12 +62,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Value</string>
+			<string>CSS Value</string>
 			<key>scope</key>
-			<string>support.constant.css ,
-keyword.other.unit.css,
-meta.property-value.css,
-constant.numeric.js</string>
+			<string>support.constant.css,keyword.other.unit.css,meta.property-value.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -78,8 +75,7 @@ constant.numeric.js</string>
 			<key>name</key>
 			<string>CSS Property</string>
 			<key>scope</key>
-			<string>entity.name.tag.css,
-meta.selector.css</string>
+			<string>entity.name.tag.css,entity.other.attribute-name.class.css,entity.other.attribute-name.pseudo-element.css,entity.other.attribute-name.id.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -90,9 +86,7 @@ meta.selector.css</string>
 			<key>name</key>
 			<string>CSS Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.section.property-list.css,
-punctuation.separator.key-value,
-punctuation.terminator.rule.css,</string>
+			<string>punctuation.section.property-list.css,punctuation.separator.key-value,punctuation.terminator.rule.css,</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -103,8 +97,7 @@ punctuation.terminator.rule.css,</string>
 			<key>name</key>
 			<string>JS General</string>
 			<key>scope</key>
-			<string>source.js,
-support.constant.js,</string>
+			<string>source.js,support.constant.js,</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -113,13 +106,20 @@ support.constant.js,</string>
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>JS Value</string>
+			<key>scope</key>
+			<string>constant.numeric.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9ADD0E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>JS Keywords</string>
 			<key>scope</key>
-			<string>storage.type.js,
-keyword.control.js,
-keyword.operator.new.js,
-constant.js,
-variable.language</string>
+			<string>storage.type.js,keyword.control.js,keyword.operator.new.js,constant.js,storage.type.function.js,constant.language.null,constant.language.boolean,variable.language</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -130,11 +130,7 @@ variable.language</string>
 			<key>name</key>
 			<string>JS Punctuation</string>
 			<key>scope</key>
-			<string>meta.brace.curly.js, 
-punctuation.definition.parameters.begin.js, 
-punctuation.definition.parameters.end.js, 
-source.js keyword.operator.js,
-punctuation.terminator.statement.js</string>
+			<string>meta.brace.curly.js,meta.brace.round.js,punctuation.definition.parameters.begin.js, punctuation.definition.parameters.end.js, source.js keyword.operator.js,punctuation.terminator.statement.js</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -156,7 +152,7 @@ punctuation.terminator.statement.js</string>
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
-			<string>comment.line</string>
+			<string>comment.line,comment.block</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -167,8 +163,7 @@ punctuation.terminator.statement.js</string>
 			<key>name</key>
 			<string>Comment Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition.comment,
-punctuation.definition.tag.html</string>
+			<string>punctuation.definition.comment,punctuation.definition.tag.html,punctuation.definition.tag.begin.html,punctuation.definition.tag.end.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -179,14 +174,22 @@ punctuation.definition.tag.html</string>
 			<key>name</key>
 			<string>HTML Element</string>
 			<key>scope</key>
-			<string>entity.name.tag.structure.any.html,
-entity.name.tag.inline.any.html,
-entity.name.tag.block.any.html,
-entity.name.tag.script.html</string>
+			<string>meta.tag.sgml.html,entity.name.tag.html,entity.name.tag.structure.any.html,entity.name.tag.inline.any.html,entity.name.tag.block.any.html,entity.name.tag.script.html</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#FF4747</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>HTML Punctuation</string>
+			<key>scope</key>
+			<string>meta.tag.inline.any.html,text.html.basic,source.js.embedded.html</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#879EA6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,6 +201,51 @@ entity.name.tag.script.html</string>
 			<dict>
 				<key>foreground</key>
 				<string>#2B91AF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C# Keyword</string>
+			<key>scope</key>
+			<string>keyword.other.using.source.cs,keyword.other.namespace.source.cs,storage.modifier.source.cs,storage.type.generic.source.cs,keyword.control.source.cs</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2A91AF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C# Object</string>
+			<key>scope</key>
+			<string>meta.class.identifier.source.cs,meta.method.return-type.source.cs</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C14747</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>C# Type</string>
+			<key>scope</key>
+			<string>storage.type.source.cs</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A3AB11</string>
+			</dict>
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>C# Punctuation</string>
+			<key>scope</key>
+			<string>keyword.other.using.source.cs</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2A91AF</string>
 			</dict>
 		</dict>
 	</array>
