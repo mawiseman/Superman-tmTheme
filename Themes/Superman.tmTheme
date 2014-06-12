@@ -273,7 +273,7 @@
 			<key>name</key>
 			<string>Python Keyword</string>
 			<key>scope</key>
-			<string>source.python keyword.other.python,source.python keyword.operator.logical.python,source.python keyword.control.flow.python ,source.python meta.function.python storage.type.function.python,source.python keyword.control.import.python,source.python keyword.control.import.from.python,source.python meta.class.python storage.type.class.python</string>
+			<string>constant.language.python, source.python keyword.other.python,source.python keyword.operator.logical.python,source.python keyword.control.flow.python ,source.python meta.function.python storage.type.function.python,source.python keyword.control.import.python,source.python keyword.control.import.from.python,source.python meta.class.python storage.type.class.python</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -284,7 +284,7 @@
 			<key>name</key>
 			<string>Python Object</string>
 			<key>scope</key>
-			<string>source.python meta.function-call.python support.type.python,source.python meta.class.old-style.python storage.type.class.python,source.python meta.function.python entity.name.function.python,source.python meta.class.python entity.name.type.class.python</string>
+			<string>source.python meta.function-call.pythonsource.python meta.function-call.pythonsource.python meta.function-call.python support.type.python,source.python meta.class.old-style.python storage.type.class.python,source.python meta.function.python entity.name.function.python,source.python meta.class.python entity.name.type.class.python</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -306,13 +306,14 @@
 			<key>name</key>
 			<string>Python Parameter</string>
 			<key>scope</key>
-			<string>source.python meta.function.decorator.python entity.name.function.decorator.python,source.python meta.function.decorator.python entity.name.function.decorator.python support.type.python,source.python meta.function.python meta.function.parameters.python variable.parameter.function.python</string>
+			<string>source.python meta.function-call.python meta.function-call.arguments.python, storage.modifier.global.python, source.python meta.function.decorator.python entity.name.function.decorator.python,source.python meta.function.decorator.python entity.name.function.decorator.python support.type.python,source.python meta.function.python meta.function.parameters.python variable.parameter.function.python</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#BAAB08</string>
+				<string>#879EA6</string>
 			</dict>
 		</dict>
+		
 		<dict>
 			<key>name</key>
 			<string>Python Operators</string>
